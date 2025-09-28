@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KARE ACM-W Community</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loading" id="loading">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Progress Bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Animated Background -->
+  <div class="bg-animation"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-content">
+      <div class="logo">
+        <img src="./assets/kare-acmw-logo.png" alt="KARE ACM-W Logo" class="nav-logo">
+        <span class="logo-text">KARE ACM-W</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#teams"><i class="fas fa-users"></i> Teams</a></li>
+        <li><a href="#events"><i class="fas fa-calendar"></i> Events</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <div class="hero-logo">
+      <!-- Try multiple logo sources in case one doesn't exist -->
+      <img src="./assets/kare-acmw-logo.png" 
+           alt="KARE ACM-W Logo" 
+           class="logo-image"
+           onerror="this.onerror=null; this.src='./assets/FACULTIES/N. C. Brintha.jpg'; this.style.borderRadius='50%';">
+    </div>
+    <h1 class="hero-title">
+      <span class="hero-text-primary">KARE ACM-W</span>
+      <span class="hero-text-secondary">Community</span>
+    </h1>
+    <p class="hero-subtitle">Empowering Women in Computing • Building Tomorrow's Tech Leaders</p>
+    <div class="hero-decoration">
+      <div class="decoration-line"></div>
+      <i class="fas fa-star decoration-star"></i>
+      <div class="decoration-line"></div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="teams">
+    
+    <!-- Faculty Sponsor -->
+    <section class="team">
+      <h2><i class="fas fa-crown"></i> Faculty Sponsor</h2>
+      <div class="team-grid">
+        <div class="card">
+          <img src="./assets/FACULTIES/N. C. Brintha.jpg" alt="Faculty Sponsor">
+          <h3>Dr. N.C.Brintha</h3>
+          <p><i class="fas fa-graduation-cap"></i> Faculty Sponsor</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/brintha-n-c-967438255/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Faculty Coordinators -->
+    <section class="team">
+      <h2><i class="fas fa-chalkboard-teacher"></i> Faculty Coordinators</h2>
+      <div class="team-grid">
+        <div class="card">
+          <img src="./assets/FACULTIES/Dr.J.Jeyabharathi - Edited.jpg" alt="Faculty Coordinator 1">
+          <h3>Dr. J.Jeyabharathi</h3>
+          <p><i class="fas fa-user-tie"></i> Faculty Coordinator</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/dr-j-jeyabharathi-cse-a48251322/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/FACULTIES/S.Reshni - Edited.jpg" alt="Faculty Coordinator 2">
+          <h3>Mrs. S.Reshni</h3>
+          <p><i class="fas fa-user-tie"></i> Faculty Coordinator</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/reshni-suresh-5b94061b/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/FACULTIES/S .AMUTHA.jpg" alt="Faculty Coordinator 3">
+          <h3>Mrs. S.Amutha</h3>
+          <p><i class="fas fa-user-tie"></i> Faculty Coordinator</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/amutha-seviappan-a272b3293/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/FACULTIES/Mrs.A.M.Gurusigaamani - Edited.jpg" alt="Faculty Coordinator 4">
+          <h3>Mrs. A.M.Gurusigaamani</h3>
+          <p><i class="fas fa-user-tie"></i> Faculty Coordinator</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/gurusigaamani-a-m-60928489/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/FACULTIES/Mrs. P. KARDEEPA   CSE - Edited.jpg" alt="Faculty Coordinator 5">
+          <h3>Mrs. P.Kardeepa</h3>
+          <p><i class="fas fa-user-tie"></i> Faculty Coordinator</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/p-kardeepa-cse-684a51306/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/FACULTIES/Mrs.B.Lavanya.jpg" alt="Faculty Coordinator 6">
+          <h3>Mrs. B.Lavanya</h3>
+          <p><i class="fas fa-user-tie"></i> Faculty Coordinator</p>
+          <button onclick="connectLinkedIn('#')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/FACULTIES/Mrs.N.Kirthiga - Edited.jpg" alt="Faculty Coordinator 7">
+          <h3>Mrs. N.Kirthiga</h3>
+          <p><i class="fas fa-user-tie"></i> Faculty Coordinator</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/kirthiga-n-a328a9142/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Office Bearers -->
+    <section class="team">
+      <h2><i class="fas fa-medal"></i> Office Bearers</h2>
+      <div class="team-grid">
+        <div class="card">
+          <img src="./assets/Office Bearers/Sandhiya jpg - Edited.jpg" alt="Office Bearer 1">
+          <h3>Sandhiya</h3>
+          <p><i class="fas fa-crown"></i> Chair</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/sandhiya-s-1409b7262/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Office Bearers/Rishika - Edited.jpg" alt="Office Bearer 2">
+          <h3>Rishika P</h3>
+          <p><i class="fas fa-star"></i> Vice Chair</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/rishika-ponnalagappan-884056292/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Office Bearers/pranaya - Edited.jpg" alt="Office Bearer 3">
+          <h3>Pranaya S.J</h3>
+          <p><i class="fas fa-pen"></i> Secretary</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/pranaya-subramani-164670268/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Office Bearers/Ainsley - Edited.jpg" alt="Office Bearer 4">
+          <h3>Ainsely</h3>
+          <p><i class="fas fa-coins"></i> Treasurer</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/ainsley-antony-5440292b7/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Office Bearers/Samyuktha.C - Edited.jpg" alt="Office Bearer 6">
+          <h3>Samyuktha C</h3>
+          <p><i class="fas fa-users"></i> Membership Chair</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/samyuktha-chandramohan-9a4919268/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Office Bearers/Gokul - Edited.jpg" alt="Office Bearer 5">
+          <h3>Gokul</h3>
+          <p><i class="fas fa-user-graduate"></i> Student Advisor</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/gokul-reddy-mudiyala-902753268/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Web Wizards -->
+    <section class="team">
+      <h2><i class="fas fa-code"></i> Web Wizards</h2>
+      <div class="team-grid">
+        <div class="card">
+          <img src="./assets/Web Dev/Hariprakash - Edited.jpg" alt="Web Wizard 1">
+          <h3>Hari Prakash S</h3>
+          <p><i class="fas fa-laptop-code"></i> Web Developer Lead</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/hari-prakash-604a7a315/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Web Dev/Bharath D - Edited.jpg" alt="Web Wizard 2">
+          <h3>Bharath D</h3>
+          <p><i class="fas fa-code"></i> Web Developer</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/bharathd14/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Web Dev/Shankar R - Edited.jpg" alt="Web Wizard 3">
+          <h3>Shankar R</h3>
+          <p><i class="fas fa-code"></i> Web Developer</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/shankarr3114/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Web Dev/B Surendra.jpg" alt="Web Wizard 4">
+          <h3>Surendra Reddy B</h3>
+          <p><i class="fas fa-code"></i> Web Developer</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/surendra-reddy-80156b323/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Web Dev/ISHU KUMAR  - Edited.jpg" alt="Web Wizard 5">
+          <h3>Ishu Kumar</h3>
+          <p><i class="fas fa-code"></i> Web Developer</p>
+          <button onclick="connectLinkedIn('#')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Titans -->
+    <section class="team">
+      <h2><i class="fas fa-cog"></i> Tech Titans</h2>
+      <div class="team-grid">
+        <div class="card">
+          <img src="./assets/Technical supporters/Priya Dharshini M - Edited.jpg" alt="Tech Titans 1">
+          <h3>Priya Dharshini M</h3>
+          <p><i class="fas fa-rocket"></i> Technical Lead</p>
+          <button onclick="connectLinkedIn('#')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Technical supporters/Inbathamizhan_S.jpg" alt="Tech Titans 2">
+          <h3>Inbathamizhan S</h3>
+          <p><i class="fas fa-microchip"></i> Technical Member</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/inbathamizhan-s-a25494335/overlay/photo/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Technical supporters/DharaniThurpinti - Edited.jpg" alt="Tech Titans 3">
+          <h3>DharaniThurpinti</h3>
+          <p><i class="fas fa-microchip"></i> Technical Member</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/dharani-thurpinti-52ab54351/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Technical supporters/Rajitha Mokireddy_ - Edited.jpg" alt="Tech Titans 4">
+          <h3>Ranjitha Mokireddy</h3>
+          <p><i class="fas fa-microchip"></i> Technical Member</p>
+          <button onclick="connectLinkedIn('#')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Technical supporters/Ganesh Kumar S.jpg" alt="Tech Titans 5">
+          <h3>Ganesh Kumar S</h3>
+          <p><i class="fas fa-microchip"></i> Technical Member</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/ganeshkumar07/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Technical supporters/Dhanush.jpg" alt="Tech Titans 6">
+          <h3>Dhanush</h3>
+          <p><i class="fas fa-microchip"></i> Technical Member</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/dhanush-s-2338852ba/overlay/background-image/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Technical supporters/Aadidev J - Edited.jpg" alt="Tech Titans 7">
+          <h3>Aadidev J</h3>
+          <p><i class="fas fa-microchip"></i> Technical Member</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/aadidevj007/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- UI/UX Architects -->
+    <section class="team">
+      <h2><i class="fas fa-paint-brush"></i> UI/UX Architects</h2>
+      <div class="team-grid">
+        <div class="card">
+          <img src="./assets/UI-UX /Anith - Edited.jpg" alt="UI/UX Architect 1">
+          <h3>Anith A.K</h3>
+          <p><i class="fas fa-palette"></i> UI/UX Designer Lead</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/a-k-anith-734b1b256/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/UI-UX /HARIHARA SUDHARSHINI S - Edited.jpg" alt="UI/UX Architect 2">
+          <h3>Harihara Sudharshini S</h3>
+          <p><i class="fas fa-pencil-ruler"></i> UI/UX Designer</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/harihara-sudharshini-s-2b2620231/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/UI-UX /Brundha K - Edited.png" alt="UI/UX Architect 3">
+          <h3>Brundha K</h3>
+          <p><i class="fas fa-pencil-ruler"></i> UI/UX Designer</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/brundha-kannan/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/UI-UX /JayaBharathi - Edited.jpg" alt="UI/UX Architect 4">
+          <h3>JayaBharathi</h3>
+          <p><i class="fas fa-pencil-ruler"></i> UI/UX Designer</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/jaya-bharathi-s-4a4451379/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/UI-UX /NIRANJAN U - Edited.jpg" alt="UI/UX Architect 5">
+          <h3>Niranjan U</h3>
+          <p><i class="fas fa-pencil-ruler"></i> UI/UX Designer</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/niranjanuvaraja/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Media & Lens -->
+    <section class="team">
+      <h2><i class="fas fa-camera"></i> Media & Lens</h2>
+      <div class="team-grid">
+        <div class="card">
+          <img src="./assets/Social media/Suthikson_ - Edited.jpg" alt="Media 1">
+          <h3>Suthikson S</h3>
+          <p><i class="fas fa-share-alt"></i> Social Media Lead</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/suthikson-suthik-270936268/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Lens & Edit/Sanjay - Edited.jpg" alt="Media 2">
+          <h3>Sanjay Saravana Perumal A</h3>
+          <p><i class="fas fa-video"></i> Lens & Edit</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/sanjay-saravanaperumal-a-a95616352/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Lens & Edit/SANJAY DEV PK.webp" alt="Media 3">
+          <h3>Sanjay Dev P.K</h3>
+          <p><i class="fas fa-video"></i> Lens & Edit</p>
+          <button onclick="connectLinkedIn('#')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Lens & Edit/TANNEERU CHANDRA SIDHARDHA_.jpg" alt="Media 4">
+          <h3>Tanneru Chandra Sidhardha</h3>
+          <p><i class="fas fa-video"></i> Lens & Edit</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/tanneeru-chandra-sidhardha-4292a4268/overlay/about-this-profile/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Coordinators -->
+    <section class="team">
+      <h2><i class="fas fa-calendar-alt"></i> Event Coordinators</h2>
+      <div class="team-grid">
+        <div class="card">
+          <img src="./assets/Event Managers/Velpula Jeevan Kishore Babu - Edited.png" alt="Event Coordinators 1">
+          <h3>Velpula Jeevan Kishore Babu</h3>
+          <p><i class="fas fa-bullhorn"></i> Event Management Lead</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/jeevankiba-v/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Event Managers/Subramanian A - Edited.jpg" alt="Event Coordinators 2">
+          <h3>Subramanian A</h3>
+          <p><i class="fas fa-tasks"></i> Event Manager</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/subramanian-a-90b18836a/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Event Managers/Keerthi Sri Polineni - Edited.png" alt="Event Coordinators 3">
+          <h3>Keerthi Sri Polineni</h3>
+          <p><i class="fas fa-tasks"></i> Event Manager</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/keerthi-sri-polineni-311886268/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Event Managers/Meesala jahnavi sree_ - Edited.jpg" alt="Event Coordinators 4">
+          <h3>Meesala Jahnavi Sree</h3>
+          <p><i class="fas fa-tasks"></i> Event Manager</p>
+          <button onclick="connectLinkedIn('#')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Event Managers/BALLANI SHASHANK(99240041211) - Edited.jpg" alt="Event Coordinators5">
+          <h3>Ballani Shashank</h3>
+          <p><i class="fas fa-tasks"></i> Event Manager</p>
+          <button onclick="connectLinkedIn('#')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Event Managers/9924005043 Gaddam Kamalakar Reddy_ - Edited.jpg" alt="Event Coordinators 6">
+          <h3>Gaddam Kamalakar Reddy</h3>
+          <p><i class="fas fa-tasks"></i> Event Manager</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/kamalakar-reddy-gaddam-166722376/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Event Managers/Sahana - Edited.png" alt="Event Coordinators 7">
+          <h3>Sahana R</h3>
+          <p><i class="fas fa-tasks"></i> Event Manager</p>
+          <button onclick="connectLinkedIn('#')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Event Managers/Himabindu Jureddy  - Edited.jpg" alt="Event Coordinators 8">
+          <h3>Himabindu Jureddy</h3>
+          <p><i class="fas fa-tasks"></i> Event Manager</p>
+          <button onclick="connectLinkedIn('#')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Event Managers/Himabindu Jureddy  - Edited.jpg" alt="Event Coordinators 9">
+          <h3>Mounika S</h3>
+          <p><i class="fas fa-tasks"></i> Event Manager</p>
+          <button onclick="connectLinkedIn('#')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Event Managers/Himabindu Jureddy  - Edited.jpg" alt="Event Coordinators 10">
+          <h3>Varajanaki A</h3>
+          <p><i class="fas fa-tasks"></i> Event Manager</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/varajanaki-a-bb2654336/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Writers -->
+    <section class="team">
+      <h2><i class="fas fa-edit"></i> Content Writers</h2>
+      <div class="team-grid">
+        <div class="card">
+          <img src="./assets/Content writers/Kowsykha Saravanakumar - Edited.jpg" alt="Content Writers 1">
+          <h3>Kowsykha Saravanakumar</h3>
+          <p><i class="fas fa-feather-alt"></i> Content Writer Lead</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/kowsykha-saravanakumar/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        <div class="card">
+          <img src="./assets/Content writers/Thrivikram Nallabothula_ - Edited.jpg" alt="Content Writers 2">
+          <h3>Thrivikram Nallabothula</h3>
+          <p><i class="fas fa-pen-fancy"></i> Content Writer</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/thrivikram-n-3259a9324/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        
+        <div class="card">
+          <img src="./assets/Content writers/Yalamanchali Hoshitha - Edited.jpg" alt="Content Writers 3">
+          <h3>Yalamanchali Hoshitha</h3>
+          <p><i class="fas fa-pen-fancy"></i> Content Writer</p>
+          <button onclick="connectLinkedIn('https://www.linkedin.com/in/yalamanchali-hoshitha-230a1328a/')">
+            <i class="fab fa-linkedin"></i> Connect
+          </button>
+        </div>
+        
+
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-content">
+      <p>&copy; 2025 KARE ACM-W Community. Empowering Women in Computing.</p>
+      <p>Building Tomorrow's Tech Leaders Today</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/kare_acm_w?igsh=aWFxNDg3ZHIzeHBw" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/kare-acm-w-student-chapter-8212b8320/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
